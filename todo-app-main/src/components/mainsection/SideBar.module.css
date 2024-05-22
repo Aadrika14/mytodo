@@ -1,0 +1,120 @@
+
+.sidebarItem {
+  margin-bottom: 0.7rem; /* Adjust margin for smaller screens */
+}
+
+.addTaskBtn, .searchBtn, .todayBtn {
+  width: 90%;
+  padding: 0.8rem; /* Adjust padding for smaller screens */
+  
+  border: none;
+  background-color: #e6e4e4;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.customCalendar {
+  border: 1px solid #ccc;
+  border-radius: 0.4rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.customDay {
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.selectedDay {
+  background-color: #007bff;
+  color: white;
+}
+
+.addTaskBtn:hover, .searchBtn:hover, .todayBtn:hover {
+  background-color: #ddd;
+}
+/* SideBar.module.css */
+.sidebar {
+  position: relative; /* Set position relative for absolute positioning of bottom buttons */
+  background-color: #2b2626;
+  padding: 1rem;
+  height: 100vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+.sidebar {
+  position: relative;
+  width: 14rem; /* Decrease the width of the sidebar */
+  background-color: #f0f0f0;
+  padding: 1rem;
+  height: 100vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+  .sidebarItem {
+    margin-bottom: 0.5rem; /* Adjust margin for smaller screens */
+  }
+
+  .addTaskBtn,
+  .searchBtn,
+  .todayBtn {
+    padding: 0.6rem; /* Adjust padding for smaller screens */
+    font-size: 1.2rem; /* Adjust font size for smaller screens */
+  }
+
+  .helpBtn,
+  .settingsBtn {
+    width: 100%; /* Each button occupies full width on smaller screens */
+  }
+
+
+
+  .addTaskBtn,
+  .searchBtn,
+  .todayBtn {
+    padding: 0.5rem; /* Further adjust padding for even smaller screens */
+    font-size: 1rem; /* Further adjust font size for even smaller screens */
+  }
+
+  .helpBtn,
+  .settingsBtn {
+    padding: 0.5rem; /* Further adjust padding for even smaller screens */
+    font-size: 1rem; /* Further adjust font size for even smaller screens */
+  
+}
+
+
+.bottomButtons {
+  position: absolute;
+  bottom: 1rem; /* Adjust as needed */
+  width: 80%; /* Occupy the full width of the sidebar */
+  display: grid;
+}
+
+.helpBtn,
+.settingsBtn {
+  width: auto;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: none;
+  background-color: #e6e4e4;
+  border-radius: 1rem;
+  margin: 0.4rem;
+  cursor: pointer;
+}
+
+.helpBtn:hover,
+.settingsBtn:hover {
+  background-color: #ddd;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .sidebar {
+    display: none; /* Hide the sidebar on smaller screens */
+  }
+}

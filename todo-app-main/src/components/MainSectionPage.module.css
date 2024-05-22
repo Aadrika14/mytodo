@@ -1,0 +1,113 @@
+.allItem {
+  display: flex;
+}
+
+.app {
+  flex: 1;
+  padding: 20px;
+}
+
+.db_elem {
+  margin-top: 20px;
+}
+
+.al {
+  background-color: rgb(234, 179, 235);
+  border-radius: 1rem;
+  display: flex;
+  margin: 1rem;
+  height: 5rem;
+  align-items: center;
+}
+
+.collective {
+  display: flex;
+  align-items: center;
+  width: 60rem;
+  height: 4rem;
+  position: relative;
+  left: 2rem;
+}
+
+.collective h1 {
+  flex: 1;
+  margin: 0;
+  font-size: 18px;
+}
+
+.completed {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 20%;
+  border: 1px solid black;
+  background-color: white;
+  cursor: pointer;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: -2%;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 10px;
+  margin-left: auto;
+  position: relative;
+  left: 23%;
+}
+
+.del {
+  cursor: pointer;
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  height: 3.5rem;
+  width: 3.5rem;
+}
+
+.edit {
+  cursor: pointer;
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  width: 4.5rem;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  height: 3.5rem;
+  width: 3.5rem;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 5px;
+  font-size: 18px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.editIcon {
+  margin-left: 6px;
+}
+/* Adjustments for smaller screens */
+@media only screen and (max-width: 768px) {
+  .del,
+  .edit {
+    margin-top: 0; /* Reset margin */
+    margin-left: 0; /* Reset margin */
+    width: 100%; /* Occupy full width */
+  }
+}

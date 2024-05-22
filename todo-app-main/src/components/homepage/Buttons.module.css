@@ -1,0 +1,46 @@
+.btns {
+  position: relative;
+  margin-top: 3rem; /* Adjust this margin as needed */
+  display: flex;
+
+}
+
+.btn1 {
+  display: grid;
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  height:3rem;
+  width:7rem;
+  border-radius: 1rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(68, 204, 68);
+  color:white;
+  top:-2rem;
+}
+.btn2 {
+  display: grid;
+  position: absolute;
+  right: 8rem;
+  height:3rem;
+  width:7rem;
+  border-radius: 1rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color:rgb(68, 204, 68);
+  color:white;
+  top:-2rem;
+  margin-right: 1rem;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+  .btn {
+    flex-direction: column;
+    right: 0;
+    top: 6rem; /* Adjust this value to avoid overlap */
+  }
+}

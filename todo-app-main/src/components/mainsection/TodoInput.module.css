@@ -1,0 +1,66 @@
+/* TodoInput.module.css */
+
+/* Original styles */
+
+.inp input {
+  height: 3rem;
+  width: 45rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+.head{
+  color: brown;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inp button {
+  height: 3rem;
+  width: 6rem;
+  margin: 2rem;
+  border-radius: 1rem;
+  background-color: rgb(30, 231, 30);
+  color: white;
+}
+
+/* Adjustments for smaller screens */
+@media only screen and (max-width: 768px) {
+  .inp input {
+    width: 100%;
+  }
+
+  .inp {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .inp button {
+    width: 100%;
+    margin: 1rem 0;
+  }
+}
+
+/* Adjustments for even smaller screens */
+@media only screen and (max-width: 480px) {
+  .inp {
+    padding: 0.5rem;
+  }
+
+  .inp input {
+    padding: 0.8rem;
+    font-size: 1rem;
+  }
+
+  .inp button {
+    padding: 0.8rem;
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,17 @@
+.background {
+  display: flex; /* Flexbox is used for layout */
+  flex-direction: column; /* Children are stacked vertically */
+  justify-content: center; /* Center content horizontally in the flex container */
+  align-items: center; /* Center content vertically in the flex container */
+  height: 100vh; /* Ensure the container takes up full viewport height */
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/mainbackground.jpg'); /* Gradient overlay on top of the image */
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the image */
+}
+
+@media (max-width: 768px) {
+  .background {
+    /* Adjustments for smaller devices */
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../src/assets/mainbackground.jpg'); /* Increase transparency for smaller screens */
+  }
+}

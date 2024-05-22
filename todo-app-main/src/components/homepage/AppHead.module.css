@@ -1,0 +1,24 @@
+.head {
+  margin: 0;
+  top: 0rem;
+  font-size: 3rem;
+  position: relative;
+  font-weight: bold;
+  background: -webkit-linear-gradient(86deg, #2465cd, #be1000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.head2 {
+  font-size: 1.2rem;
+  margin: 0rem;
+  top: 0rem;
+  position: relative;
+  color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

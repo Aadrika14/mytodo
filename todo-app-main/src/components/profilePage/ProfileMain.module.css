@@ -1,0 +1,108 @@
+.profileContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff0f5;
+  padding: 25px;
+  border-radius: 20px;
+  width: 60%;
+  /* height: 80%; */
+  max-width: 600px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.profileHeader {
+  color: #2a2a72;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.profileImageContainer {
+  margin-bottom: 1px;
+}
+
+.profileImage {
+  width: 170px;
+  height: 170px;
+  border-radius: 75px;
+}
+
+.uploadContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.uploadIcon {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 1px;
+}
+
+.uploadText {
+  font-size: 0.8rem;
+  margin-bottom: 11px;
+  color: #2a2a72;
+}
+
+.inputField {
+  height: 25%;
+  width: 60%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.inputField:focus {
+  border-color: #6a5acd;
+}
+
+.updateButton {
+  padding: 10px 20px;
+  background-color: #32cd32;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.updateButton:hover {
+  background-color: #228b22;
+}
+
+@media (max-width: 990px) {
+  .profileContainer {
+    width: 80%;
+    padding: 15px;
+    height:80%;
+  }
+
+  .profileImage {
+    width: 150px;
+    height: 150px;
+  }
+
+  .uploadIcon {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+@media (max-width: 990px) {
+  .profileContainer {
+    width: 85%;
+    padding: 10px;
+  }
+
+  .profileHeader {
+    font-size: 1.5rem;
+  }
+
+  .updateButton {
+    padding: 8px 16px;
+  }
+}

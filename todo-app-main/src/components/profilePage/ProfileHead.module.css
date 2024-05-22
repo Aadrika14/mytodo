@@ -1,0 +1,84 @@
+/* ProfileHead.module.css */
+
+@keyframes flip {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.headContainer {
+  text-align: center; /* Centers the text for better focus */
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.header {
+  font-size: 2.5rem; /* Large text size for impact */
+  color: white;
+  font-family: 'Arial', sans-serif; /* Consider a more decorative or modern font if suitable */
+  position: relative;
+}
+
+
+.dynamicText {
+  background: linear-gradient(to right, #f35626, #feab3a);
+  -webkit-background-clip: text;
+  background-clip: text;          /* Standard property for all supporting browsers */
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: shine 2s forwards, jump 0.5s infinite;
+  display: inline;
+}
+
+@keyframes shine {
+  from { filter: hue-rotate(0deg); }
+  to { filter: hue-rotate(360deg); }
+}
+
+@keyframes jump {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.smile {
+  height: 3.5rem;
+  width: 3.5rem;
+  animation: flip 3s infinite;
+}
+
+.paragraph {
+  color: white;
+  font-size: 1rem;
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 5px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .header {
+    font-size: 2.2rem;
+  }
+  .paragraph {
+    font-size: 0.9rem;
+  }
+  .smile {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    font-size: 1.9rem;
+  }
+  .paragraph {
+    font-size: 0.6rem;
+  }
+  .smile {
+    height: 2rem;
+    width: 2rem;
+  }
+}

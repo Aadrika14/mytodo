@@ -1,0 +1,140 @@
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.settingsHeader{
+    font-size:20px;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #f0e4cd;
+    padding: 20px;
+}
+
+.settingsHeader {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.searchBar {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.sidebarMenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebarMenu li {
+    margin-bottom: 2px;
+}
+
+.sidebarMenu li a {
+    display: block;
+    padding: 4px;
+    color: #333;
+    text-decoration: none;
+}
+
+.sidebarMenu li a:hover {
+    background-color: #ffa500;
+    color: #fff;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.addTeam {
+    margin-top: 50px;
+}
+
+/* Account Section Styles */
+.content h2 {
+    font-size: 26px;
+    padding-bottom: 10px;
+}
+
+.content {
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content h1 {
+    font-size: 25px;
+    margin-top: -30px;
+}
+
+.content h3 {
+    font-size: 18px;
+    margin-bottom: 2px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+}
+
+.content input[type="text"],
+.content input[type="email"] {
+    width: 40%;
+    padding: 3px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding-bottom: 30px;
+}
+
+.content button {
+    padding: 5px 5px;
+    background-color: #050b10;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 30px;
+}
+
+.content button:hover {
+    background-color: #0056b3;
+}
+
+.content label {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.content input[type="checkbox"] {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.content input[type="checkbox"]:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+  
+    .sidebar {
+        width: 100%;
+    }
+  
+    .content {
+        padding: 20px;
+    }
+  
+    .content input[type="text"],
+    .content input[type="email"] {
+        width: 100%;
+    }
+}
