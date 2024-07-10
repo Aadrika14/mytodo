@@ -37,24 +37,24 @@ function MainSectionPage() {
 
     getTodos();
   }, []);
-
+  const backendUrl = "https://my-g7i5.onrender.com";
   const addTodo = async(obj) => {
-    let data = await axios.post("http://localhost:4000/todos/addtodo", obj);
-    let newData = await axios("http://localhost:4000/todos");
+    let data = await axios.post(`${backendUrl}/todos/addtodo`, obj);
+    let newData = await axios.get(`${backendUrl}/todos`);
     setTodos(newData.data);
   };
 
   const updateTodo = async (id, updatedData) => {
-    let data = await axios.patch(`http://localhost:4000/todos/${id}`, updatedData);
+    let data = await axios.patch(`${backendUrl}/todos/${id}`, updatedData);
     console.log(data.data.message);
-    let newData = await axios("http://localhost:4000/todos");
+    let newData = await axios.get(`${backendUrl}/todos`);
     setTodos(newData.data);
   };
 
   const setDelete = async (id) => {
-    let data = await axios.delete(`http://localhost:4000/todos/${id}`);
+    let data = await axios.delete(`${backendUrl}/todos/${id}`);
     console.log(data.data.message);
-    let newData = await axios("http://localhost:4000/todos");
+    let newData = await axios.get(`${backendUrl}/todos`);
     setTodos(newData.data);
   };
 
